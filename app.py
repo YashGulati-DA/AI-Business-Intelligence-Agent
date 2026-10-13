@@ -132,33 +132,29 @@ if st.button(
             st.subheader("Analysis Results")
 
 # Split the verified results from the AI explanation
-if "### AI Business Explanation" in answer:
-    database_part, explanation_part = answer.split(
-        "### AI Business Explanation", 1
-    )
+            if "### AI Business Explanation" in answer:
+                database_part, explanation_part = answer.split(
+                    "### AI Business Explanation", 1
+                )
 
-    st.markdown("### Verified Database Results")
+                st.markdown("### Verified Database Results")
 
-    database_text = database_part.replace(
-        "### Verified Database Results", ""
-    ).strip()
+                database_text = database_part.replace(
+                    "### Verified Database Results", ""
+                ).strip()
 
-    st.code(database_text, language="text")
+                database_text = database_text.replace("```text", "").replace("```", "").strip()
+                st.text(database_text)
 
-    st.markdown("### AI Business Explanation")
-    st.markdown(explanation_part.strip())
+                st.markdown("### AI Business Explanation")
+                st.markdown(explanation_part.strip())
 
-else:
-    st.markdown(answer)
+            else:
+                st.markdown(answer)
 
         except Exception as error:
-            st.error(
-                "Something went wrong while generating the answer."
-            )
-
+            st.error("Something went wrong while generating the answer.")
             st.code(str(error))
-
-
 # --------------------------------------------------
 # 7. Footer
 # --------------------------------------------------
