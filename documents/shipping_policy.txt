@@ -1,0 +1,12 @@
+SHIPPING POLICY
+
+Orders are processed after purchase confirmation.
+
+The estimated delivery date is stored in the orders database.
+
+Actual delivery dates may differ from estimated delivery dates.
+
+Delivery performance can be analyzed by comparing the estimated
+delivery date with the actual delivery date.
+
+This document contains example business rules for the project.

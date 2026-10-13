@@ -1,0 +1,11 @@
+REFUND POLICY
+
+Customers can request a refund for eligible cancelled orders.
+
+Refund eligibility depends on the order status and the company's
+applicable refund rules.
+
+Refund requests should be reviewed before approval.
+
+This document describes example business rules created for the
+AI Business Intelligence Agent project.

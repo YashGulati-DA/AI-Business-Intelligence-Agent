@@ -1,0 +1,13 @@
+BUSINESS OVERVIEW
+
+This project analyzes an e-commerce dataset using SQL and AI.
+
+The database contains customer, order, product, seller, payment,
+and order-item information.
+
+Revenue analysis can use the price column in the order_items table.
+
+Order performance can be analyzed using order status and delivery dates.
+
+The AI agent combines structured database results with information
+retrieved from business documents.
